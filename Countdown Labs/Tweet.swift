@@ -19,6 +19,8 @@ class Tweet: NSObject {
     var mediaURL:String?
     var isMedia:Bool = false;
     var id:String?
+    var retweetCount:String?
+    var likedCount:String?
 
     private let formatter:DateFormatter = {
         let formatter = DateFormatter() //9:49 AM - 15 Jan 2017
@@ -43,6 +45,8 @@ class Tweet: NSObject {
         if jsonDict["user"]["profile_image_url"].string != nil{
             self.profileURL = jsonDict["user"]["profile_image_url"].string
         }
+        self.retweetCount = "\(jsonDict["retweet_count"].intValue)"
+        self.likedCount = "\(jsonDict["retweeted_status"]["favorite_count"].intValue)"
         
         if jsonDict["created_at"].string != nil {
             

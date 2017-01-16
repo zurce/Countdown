@@ -28,7 +28,8 @@ class TwitterTableViewController: UITableViewController,TimerHeaderDelegate,DZNE
         
         self.fetchTweets();
       
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Reset", style: .plain, target: self, action: #selector(TwitterTableViewController.resetView));
+        //this button reset also the header and allow the user to change the timer after he already set it
+       // self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Reset", style: .plain, target: self, action: #selector(TwitterTableViewController.resetView));
         
         self.tableView.rowHeight = UITableViewAutomaticDimension;
         self.tableView.estimatedRowHeight = 150.0; // average height of a tweet cell

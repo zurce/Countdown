@@ -98,7 +98,6 @@
 				9E6DC9361E2C4B5400CC747F /* LaunchScreen.storyboard */,
 				9E6DC9391E2C4B5400CC747F /* Info.plist */,
 				9E6DC9311E2C4B5400CC747F /* Countdown_Labs.xcdatamodeld */,
-				9E85C27C1E2C984000E04F54 /* Tweet.swift */,
 			);
 			path = "Countdown Labs";
 			sourceTree = "<group>";
@@ -106,6 +105,7 @@
 		9E6DC9421E2C5BCC00CC747F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9E85C27C1E2C984000E04F54 /* Tweet.swift */,
 				9E6DC92C1E2C4B5400CC747F /* TwitterTableViewController.swift */,
 				9E85C27E1E2CA70F00E04F54 /* TweetTableViewCell.swift */,
 				9E85C2801E2CD20800E04F54 /* TwitterViewModel.swift */,
