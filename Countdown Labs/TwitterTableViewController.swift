@@ -65,7 +65,12 @@ class TwitterTableViewController: UITableViewController,TimerHeaderDelegate,DZNE
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:TweetTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "defaultCell", for: indexPath) as! TweetTableViewCell;
+        var identifier = "defaultCell"
+        if dataSource[indexPath.row].isMedia{
+            identifier = "mediaCell"
+        }
+        
+        let cell:TweetTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! TweetTableViewCell;
         return cell;
     }
     

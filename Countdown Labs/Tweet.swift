@@ -16,11 +16,14 @@ class Tweet: NSObject {
     var handle:String?
     var name:String?
     var profileURL:String?
+    var mediaURL:String?
+    var isMedia:Bool = false;
     var id:String?
 
     private let formatter:DateFormatter = {
-        let formatter = DateFormatter()
+        let formatter = DateFormatter() //9:49 AM - 15 Jan 2017
         formatter.dateFormat = "eee MMM dd HH:mm:ss ZZZZ yyyy"
+
         return formatter
     }()
     init(jsonDict:JSON){
@@ -44,6 +47,11 @@ class Tweet: NSObject {
         if jsonDict["created_at"].string != nil {
             
             self.timeStamp = self.formatter.date(from: jsonDict["created_at"].string!);
+        }
+        
+        if (jsonDict["entities"]["media"].array?.isEmpty == false){
+            self.isMedia = true;
+            self.mediaURL = jsonDict["entities"]["media"][0]["media_url"].string!;
         }
     }
 }

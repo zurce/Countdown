@@ -11,6 +11,7 @@ import SDWebImage
 class TweetTableViewCell: UITableViewCell {
 
     @IBOutlet weak var imgProfile: UIImageView!
+    @IBOutlet weak var imgMedia: UIImageView!
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblHandle: UILabel!
     @IBOutlet weak var lblText: UILabel!
@@ -20,6 +21,12 @@ class TweetTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    private let formatter:DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "hh:mm aa - dd MMM yyyy"
+        return formatter
+    }()
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -32,6 +39,10 @@ class TweetTableViewCell: UITableViewCell {
         self.lblHandle.text = "@" + tweet.handle!;
         self.lblName.text = tweet.name!;
         self.lblText.text = tweet.text!;
+        self.lblDate.text = formatter.string(from: tweet.timeStamp!);
+        if tweet.isMedia {
+            self.imgMedia.sd_setImage(with: URL(string: tweet.mediaURL!));
+        }
         
     }
 
