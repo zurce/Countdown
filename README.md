@@ -6,9 +6,9 @@ This project is a test application that show how to use native and external libr
 Countdown is a basic application that allows the user to set a custom timer and when it finishes, it displays the tweets from the #botw (Breath of the Wild) hashtag on twitter.
 
 ##Screenshots: 
-![img_0610](https://cloud.githubusercontent.com/assets/3020882/21998154/f740482e-dbe7-11e6-8e70-7f9092e62364.PNG)
-![img_0611](https://cloud.githubusercontent.com/assets/3020882/21998155/f7415d90-dbe7-11e6-941d-0c9a026a5301.PNG)
-![img_0612](https://cloud.githubusercontent.com/assets/3020882/21998156/f7417302-dbe7-11e6-9750-6f9469faa99a.PNG)
+<img src="https://cloud.githubusercontent.com/assets/3020882/21998154/f740482e-dbe7-11e6-8e70-7f9092e62364.PNG" width="240">
+<img src="https://cloud.githubusercontent.com/assets/3020882/21998155/f7415d90-dbe7-11e6-941d-0c9a026a5301.PNG" width="240">
+<img src="https://cloud.githubusercontent.com/assets/3020882/21998156/f7417302-dbe7-11e6-9750-6f9469faa99a.PNG" width="240">
 
 ##Features:
 - Network Layer for Basic OAuth 2.0. with the Twitter API
@@ -27,13 +27,15 @@ Countdown is a basic application that allows the user to set a custom timer and 
 
 ###Contributions:
 - Icon Assets acquired from the [SmashIcon](http://smashicons.com/) Pack, by [madebyoliver](https://twitter.com/madebyoliver)
-Libraries:
+
+###Libraries:
 - [Alamofire](https://github.com/Alamofire/Alamofire):  An elegant HTTP networking library written in Swift.
 - [SwiftyJSON] (https://github.com/SwiftyJSON/SwiftyJSON): A Build-in JSON Parser for Network Responses
 - [SDWebImage] (https://github.com/rs/SDWebImage): Asynchronous image downloader with cache support as a UIImageView category
-- [PickerView] (https://github.com/filipealva/PickerView): A Custom Alternative to UIPickerView, it allows from custom date input (seconds) 
+- [PickerView] (https://github.com/filipealva/PickerView): A Custom Alternative to UIPickerView, it allows from custom date input (seconds)
 - [DZNEmptyDataSet] (https://github.com/dzenbot/DZNEmptyDataSet): A drop-in UITableView/UICollectionView superclass category for showing empty datasets whenever the view has no content to display
-Install:
+
+###Install:
 
 1. Open your terminal and navigate to the folder of the project
 2. Run “pod install” to add the depending libraries 
