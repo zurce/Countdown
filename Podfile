@@ -9,4 +9,5 @@ target 'Countdown Labs' do
     pod 'Alamofire', '~> 4.0' 
     pod 'SwiftyJSON' 
     pod 'SwiftDate', '~> 4.0' 
+    pod 'SDWebImage', '~>3.8' 
 end

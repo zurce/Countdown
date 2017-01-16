@@ -19,6 +19,8 @@
 		9E6DC9481E2C5D4E00CC747F /* TimerHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6DC9471E2C5D4E00CC747F /* TimerHeader.swift */; };
 		9E85C2791E2C7F1A00E04F54 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E85C2781E2C7F1A00E04F54 /* NetworkManager.swift */; };
 		9E85C27B1E2C82E500E04F54 /* String+Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E85C27A1E2C82E500E04F54 /* String+Base64.swift */; };
+		9E85C27D1E2C984000E04F54 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E85C27C1E2C984000E04F54 /* Tweet.swift */; };
+		9E85C27F1E2CA70F00E04F54 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E85C27E1E2CA70F00E04F54 /* TweetTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		9E6DC9471E2C5D4E00CC747F /* TimerHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerHeader.swift; sourceTree = "<group>"; };
 		9E85C2781E2C7F1A00E04F54 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		9E85C27A1E2C82E500E04F54 /* String+Base64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Base64.swift"; sourceTree = "<group>"; };
+		9E85C27C1E2C984000E04F54 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		9E85C27E1E2CA70F00E04F54 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 				9E6DC9361E2C4B5400CC747F /* LaunchScreen.storyboard */,
 				9E6DC9391E2C4B5400CC747F /* Info.plist */,
 				9E6DC9311E2C4B5400CC747F /* Countdown_Labs.xcdatamodeld */,
+				9E85C27C1E2C984000E04F54 /* Tweet.swift */,
 			);
 			path = "Countdown Labs";
 			sourceTree = "<group>";
@@ -100,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				9E6DC92C1E2C4B5400CC747F /* TwitterTableViewController.swift */,
+				9E85C27E1E2CA70F00E04F54 /* TweetTableViewCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -257,11 +263,13 @@
 			files = (
 				9E85C2791E2C7F1A00E04F54 /* NetworkManager.swift in Sources */,
 				9E6DC9461E2C5C0700CC747F /* UIView+FromNib.swift in Sources */,
+				9E85C27F1E2CA70F00E04F54 /* TweetTableViewCell.swift in Sources */,
 				9E6DC9481E2C5D4E00CC747F /* TimerHeader.swift in Sources */,
 				9E6DC92D1E2C4B5400CC747F /* TwitterTableViewController.swift in Sources */,
 				9E6DC92B1E2C4B5400CC747F /* AppDelegate.swift in Sources */,
 				9E85C27B1E2C82E500E04F54 /* String+Base64.swift in Sources */,
 				9E6DC9331E2C4B5400CC747F /* Countdown_Labs.xcdatamodeld in Sources */,
+				9E85C27D1E2C984000E04F54 /* Tweet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
