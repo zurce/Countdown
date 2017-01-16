@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,17 +20,68 @@
                     <rect key="frame" x="-200" y="-200" width="775" height="450"/>
                     <color key="backgroundColor" red="0.20392156859999999" green="0.1215686275" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
-                <datePicker clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Yw-ag-IN1">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g1T-mf-LkS">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
-                    <date key="date" timeIntervalSinceReferenceDate="506203200.67975098">
-                        <!--2017-01-15 20:00:00 +0000-->
-                    </date>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="color" keyPath="textColor">
-                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </datePicker>
+                    <subviews>
+                        <view tag="90" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tJf-Na-caj" customClass="PickerView" customModule="PickerView">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="190"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C30-H2-4wK">
+                            <rect key="frame" x="60" y="-0.5" width="60" height="190"/>
+                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view tag="80" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7fw-Zt-6HT" customClass="PickerView" customModule="PickerView">
+                            <rect key="frame" x="120" y="0.0" width="60" height="190"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="minutes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OmO-ty-1iL">
+                            <rect key="frame" x="180" y="0.0" width="60" height="190"/>
+                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view tag="70" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CWg-n3-BAP" customClass="PickerView" customModule="PickerView">
+                            <rect key="frame" x="240" y="0.0" width="60" height="190"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="seconds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2X-DP-YNg">
+                            <rect key="frame" x="300" y="0.0" width="75" height="190"/>
+                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="C30-H2-4wK" firstAttribute="centerY" secondItem="tJf-Na-caj" secondAttribute="centerY" id="5VQ-eG-sMe"/>
+                        <constraint firstItem="C30-H2-4wK" firstAttribute="height" secondItem="tJf-Na-caj" secondAttribute="height" id="5gv-A1-ZZp"/>
+                        <constraint firstItem="C30-H2-4wK" firstAttribute="leading" secondItem="tJf-Na-caj" secondAttribute="trailing" id="8kK-bf-7ik"/>
+                        <constraint firstAttribute="bottom" secondItem="S2X-DP-YNg" secondAttribute="bottom" id="9Cq-3E-cwc"/>
+                        <constraint firstItem="CWg-n3-BAP" firstAttribute="leading" secondItem="OmO-ty-1iL" secondAttribute="trailing" id="A6S-eP-s75"/>
+                        <constraint firstAttribute="bottom" secondItem="CWg-n3-BAP" secondAttribute="bottom" id="CNd-6M-PbQ"/>
+                        <constraint firstAttribute="bottom" secondItem="7fw-Zt-6HT" secondAttribute="bottom" id="DP3-cY-YTp"/>
+                        <constraint firstItem="OmO-ty-1iL" firstAttribute="top" secondItem="g1T-mf-LkS" secondAttribute="top" id="F1r-MD-EJ1"/>
+                        <constraint firstItem="7fw-Zt-6HT" firstAttribute="leading" secondItem="C30-H2-4wK" secondAttribute="trailing" id="HAf-FQ-n8G"/>
+                        <constraint firstAttribute="bottom" secondItem="OmO-ty-1iL" secondAttribute="bottom" id="Kmg-Ug-Ixf"/>
+                        <constraint firstItem="S2X-DP-YNg" firstAttribute="top" secondItem="g1T-mf-LkS" secondAttribute="top" id="NLt-0u-D21"/>
+                        <constraint firstItem="OmO-ty-1iL" firstAttribute="leading" secondItem="7fw-Zt-6HT" secondAttribute="trailing" id="NWw-J1-i7j"/>
+                        <constraint firstItem="CWg-n3-BAP" firstAttribute="width" secondItem="OmO-ty-1iL" secondAttribute="width" id="RKh-JF-v6X"/>
+                        <constraint firstItem="S2X-DP-YNg" firstAttribute="leading" secondItem="CWg-n3-BAP" secondAttribute="trailing" id="SKG-9T-oKW"/>
+                        <constraint firstAttribute="trailing" secondItem="S2X-DP-YNg" secondAttribute="trailing" id="W2L-fb-PUS"/>
+                        <constraint firstItem="tJf-Na-caj" firstAttribute="leading" secondItem="g1T-mf-LkS" secondAttribute="leading" id="WJJ-8C-yB6"/>
+                        <constraint firstItem="7fw-Zt-6HT" firstAttribute="width" secondItem="tJf-Na-caj" secondAttribute="width" id="XEF-7z-3hg"/>
+                        <constraint firstItem="CWg-n3-BAP" firstAttribute="top" secondItem="g1T-mf-LkS" secondAttribute="top" id="ZZ2-fq-YM7"/>
+                        <constraint firstItem="OmO-ty-1iL" firstAttribute="width" secondItem="7fw-Zt-6HT" secondAttribute="width" id="j34-Dh-HT0"/>
+                        <constraint firstItem="C30-H2-4wK" firstAttribute="width" secondItem="tJf-Na-caj" secondAttribute="width" id="kAp-jg-Baj"/>
+                        <constraint firstItem="tJf-Na-caj" firstAttribute="top" secondItem="g1T-mf-LkS" secondAttribute="top" id="s2w-CD-dcR"/>
+                        <constraint firstItem="tJf-Na-caj" firstAttribute="width" secondItem="g1T-mf-LkS" secondAttribute="width" multiplier="0.16" id="tNP-5s-74z"/>
+                        <constraint firstAttribute="bottom" secondItem="tJf-Na-caj" secondAttribute="bottom" id="u9r-eD-xmK"/>
+                        <constraint firstItem="7fw-Zt-6HT" firstAttribute="top" secondItem="g1T-mf-LkS" secondAttribute="top" id="vkg-G8-RxH"/>
+                    </constraints>
+                </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DA-ZI-hwF">
                     <rect key="frame" x="100" y="200" width="175" height="40"/>
                     <constraints>
@@ -46,7 +98,7 @@
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dWu-KW-Bik">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4m 33s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDh-69-ROJ">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0m 00s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDh-69-ROJ">
                             <rect key="frame" x="121.5" y="45" width="133" height="55"/>
                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -78,11 +130,11 @@
                                 <constraint firstAttribute="height" constant="60" id="izK-RV-jwd"/>
                                 <constraint firstAttribute="width" constant="60" id="wOu-QV-hGC"/>
                             </constraints>
-                            <state key="normal" image="pause"/>
+                            <state key="normal" image="arrows"/>
                             <state key="selected" image="play-button"/>
                             <state key="highlighted" image="play-button"/>
                             <connections>
-                                <action selector="timerPause:" destination="iN0-l3-epB" eventType="touchDown" id="84F-Pl-ZK8"/>
+                                <action selector="timerReset:" destination="iN0-l3-epB" eventType="touchDown" id="H3G-oM-uWs"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUv-fs-Q84">
@@ -92,9 +144,10 @@
                                 <constraint firstAttribute="height" constant="60" id="ZfM-1i-d3M"/>
                             </constraints>
                             <state key="normal" image="stop"/>
+                            <state key="selected" image="play-button"/>
                             <state key="highlighted" image="stop"/>
                             <connections>
-                                <action selector="timerStop:" destination="iN0-l3-epB" eventType="touchDown" id="2Wb-Sv-Gjj"/>
+                                <action selector="timerPause:" destination="iN0-l3-epB" eventType="touchDown" id="0fY-Iz-cQJ"/>
                             </connections>
                         </button>
                     </subviews>
@@ -118,32 +171,35 @@
             </subviews>
             <color key="backgroundColor" red="0.20392156862745098" green="0.12156862745098039" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="5Yw-ag-IN1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7ya-Zm-bs5"/>
+                <constraint firstAttribute="trailing" secondItem="g1T-mf-LkS" secondAttribute="trailing" id="2wU-0l-vVb"/>
+                <constraint firstItem="4DA-ZI-hwF" firstAttribute="top" secondItem="g1T-mf-LkS" secondAttribute="bottom" constant="10" id="9Vw-f3-v3h"/>
                 <constraint firstItem="dWu-KW-Bik" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="AaK-tC-fg6"/>
                 <constraint firstItem="bux-eP-Grt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-200" id="BZQ-Xs-rr7"/>
                 <constraint firstAttribute="trailing" secondItem="4DA-ZI-hwF" secondAttribute="trailing" constant="100" id="BcY-cP-QJU"/>
                 <constraint firstItem="bux-eP-Grt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-200" id="CIJ-3g-L5F"/>
+                <constraint firstItem="g1T-mf-LkS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FAx-p3-oi5"/>
                 <constraint firstAttribute="trailing" secondItem="dWu-KW-Bik" secondAttribute="trailing" id="HR1-J6-9xu"/>
                 <constraint firstItem="4DA-ZI-hwF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="100" id="JAv-Fl-p86"/>
-                <constraint firstAttribute="bottom" secondItem="5Yw-ag-IN1" secondAttribute="bottom" constant="60" id="RdW-rT-VbP"/>
+                <constraint firstItem="g1T-mf-LkS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TOy-D5-7rr"/>
                 <constraint firstAttribute="bottom" secondItem="dWu-KW-Bik" secondAttribute="bottom" id="TYR-OL-7py"/>
                 <constraint firstAttribute="trailing" secondItem="bux-eP-Grt" secondAttribute="trailing" constant="-200" id="Zws-Im-gOa"/>
-                <constraint firstAttribute="trailing" secondItem="5Yw-ag-IN1" secondAttribute="trailing" id="a5r-PX-ku8"/>
-                <constraint firstItem="5Yw-ag-IN1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dle-fp-yjO"/>
                 <constraint firstItem="dWu-KW-Bik" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="juy-2c-alm"/>
-                <constraint firstItem="4DA-ZI-hwF" firstAttribute="top" secondItem="5Yw-ag-IN1" secondAttribute="bottom" constant="10" id="tn4-Rd-XGq"/>
+                <constraint firstAttribute="bottom" secondItem="g1T-mf-LkS" secondAttribute="bottom" constant="60" id="lWH-Kb-M5R"/>
                 <constraint firstAttribute="bottom" secondItem="bux-eP-Grt" secondAttribute="bottom" id="u9b-iZ-Eh0"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="datePicker" destination="5Yw-ag-IN1" id="vv7-YB-rZ9"/>
+                <outlet property="hourPicker" destination="tJf-Na-caj" id="pbs-Vj-UlC"/>
                 <outlet property="labelTime" destination="uDh-69-ROJ" id="87x-oY-jdU"/>
+                <outlet property="minutePicker" destination="7fw-Zt-6HT" id="PvK-lo-how"/>
+                <outlet property="secondPicker" destination="CWg-n3-BAP" id="qDZ-rd-gC2"/>
+                <outlet property="stopButton" destination="mUv-fs-Q84" id="yHz-vj-Mue"/>
                 <outlet property="timerView" destination="dWu-KW-Bik" id="Wk6-Xh-RhZ"/>
             </connections>
         </view>
     </objects>
     <resources>
-        <image name="pause" width="60" height="60"/>
+        <image name="arrows" width="60" height="60"/>
         <image name="play-button" width="60" height="60"/>
         <image name="stop" width="60" height="60"/>
         <image name="stopwatch" width="60" height="60"/>

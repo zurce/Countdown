@@ -36,10 +36,8 @@ class NetworkManager: NSObject {
             request.setValue("application/x-www-form-urlencoded;charset=UTF-8", forHTTPHeaderField: "Content-Type")
             request.setValue("Basic " + combinedKey.base64Encoded()!, forHTTPHeaderField: "Authorization")
             request.httpBody = parameters.data(using: String.Encoding.utf8)
-            print(request);
             Alamofire.request(request)
                 .responseJSON { response in
-                    print(response)
                     if response.result.isSuccess{
                         let result = response.result
                         if let jsonObject: AnyObject = result.value as AnyObject? {

@@ -29,7 +29,7 @@ class TweetTableViewCell: UITableViewCell {
     
     func setupWithTweet(tweet: Tweet){
         self.imgProfile.sd_setImage(with: URL(string: tweet.profileURL!));
-        self.lblHandle.text = tweet.handle!;
+        self.lblHandle.text = "@" + tweet.handle!;
         self.lblName.text = tweet.name!;
         self.lblText.text = tweet.text!;
         

@@ -1,23 +1,26 @@
 PODS:
   - Alamofire (4.0.1)
+  - DZNEmptyDataSet (1.8.1)
+  - PickerView (0.3.0)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
-  - SwiftDate (4.0.7)
   - SwiftyJSON (3.1.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
+  - DZNEmptyDataSet
+  - PickerView
   - SDWebImage (~> 3.8)
-  - SwiftDate (~> 4.0)
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  PickerView: 1430ac060eba5f56c3d5e27ef0e47e280d083c9b
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
-  SwiftDate: 0efb04a6751b1ab804049b2b09a69848cd304c12
   SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
 
-PODFILE CHECKSUM: 2c5e2a0e2029b86adb1b6ad21fa9fb3dfae96be3
+PODFILE CHECKSUM: 33c91a0278fd86b7286c646cff58a0d70a76b198
 
 COCOAPODS: 1.1.1

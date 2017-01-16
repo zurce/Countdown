@@ -21,6 +21,7 @@
 		9E85C27B1E2C82E500E04F54 /* String+Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E85C27A1E2C82E500E04F54 /* String+Base64.swift */; };
 		9E85C27D1E2C984000E04F54 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E85C27C1E2C984000E04F54 /* Tweet.swift */; };
 		9E85C27F1E2CA70F00E04F54 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E85C27E1E2CA70F00E04F54 /* TweetTableViewCell.swift */; };
+		9E85C2811E2CD20800E04F54 /* TwitterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E85C2801E2CD20800E04F54 /* TwitterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		9E85C27A1E2C82E500E04F54 /* String+Base64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Base64.swift"; sourceTree = "<group>"; };
 		9E85C27C1E2C984000E04F54 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		9E85C27E1E2CA70F00E04F54 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
+		9E85C2801E2CD20800E04F54 /* TwitterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			children = (
 				9E6DC92C1E2C4B5400CC747F /* TwitterTableViewController.swift */,
 				9E85C27E1E2CA70F00E04F54 /* TweetTableViewCell.swift */,
+				9E85C2801E2CD20800E04F54 /* TwitterViewModel.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				9E6DC9481E2C5D4E00CC747F /* TimerHeader.swift in Sources */,
 				9E6DC92D1E2C4B5400CC747F /* TwitterTableViewController.swift in Sources */,
 				9E6DC92B1E2C4B5400CC747F /* AppDelegate.swift in Sources */,
+				9E85C2811E2CD20800E04F54 /* TwitterViewModel.swift in Sources */,
 				9E85C27B1E2C82E500E04F54 /* String+Base64.swift in Sources */,
 				9E6DC9331E2C4B5400CC747F /* Countdown_Labs.xcdatamodeld in Sources */,
 				9E85C27D1E2C984000E04F54 /* Tweet.swift in Sources */,
