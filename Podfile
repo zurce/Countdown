@@ -8,4 +8,5 @@ target 'Countdown Labs' do
   # Pods for Countdown Labs
     pod 'Alamofire', '~> 4.0' 
     pod 'SwiftyJSON' 
+    pod 'SwiftDate', '~> 4.0' 
 end

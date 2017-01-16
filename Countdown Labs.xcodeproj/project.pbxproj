@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		5CCDABF3F73616A0C822BEDC /* Pods_Countdown_Labs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282D0D8565E3CF7C5C730336 /* Pods_Countdown_Labs.framework */; };
 		9E6DC92B1E2C4B5400CC747F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6DC92A1E2C4B5400CC747F /* AppDelegate.swift */; };
-		9E6DC92D1E2C4B5400CC747F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6DC92C1E2C4B5400CC747F /* ViewController.swift */; };
+		9E6DC92D1E2C4B5400CC747F /* TwitterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6DC92C1E2C4B5400CC747F /* TwitterTableViewController.swift */; };
 		9E6DC9301E2C4B5400CC747F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E6DC92E1E2C4B5400CC747F /* Main.storyboard */; };
 		9E6DC9331E2C4B5400CC747F /* Countdown_Labs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E6DC9311E2C4B5400CC747F /* Countdown_Labs.xcdatamodeld */; };
 		9E6DC9351E2C4B5400CC747F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E6DC9341E2C4B5400CC747F /* Assets.xcassets */; };
 		9E6DC9381E2C4B5400CC747F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E6DC9361E2C4B5400CC747F /* LaunchScreen.storyboard */; };
+		9E6DC9401E2C4F0700CC747F /* TimerHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E6DC93F1E2C4F0700CC747F /* TimerHeader.xib */; };
+		9E6DC9461E2C5C0700CC747F /* UIView+FromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6DC9451E2C5C0700CC747F /* UIView+FromNib.swift */; };
+		9E6DC9481E2C5D4E00CC747F /* TimerHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6DC9471E2C5D4E00CC747F /* TimerHeader.swift */; };
+		9E85C2791E2C7F1A00E04F54 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E85C2781E2C7F1A00E04F54 /* NetworkManager.swift */; };
+		9E85C27B1E2C82E500E04F54 /* String+Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E85C27A1E2C82E500E04F54 /* String+Base64.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +27,17 @@
 		77295D5127928624AAEDE496 /* Pods-Countdown Labs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Countdown Labs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Countdown Labs/Pods-Countdown Labs.debug.xcconfig"; sourceTree = "<group>"; };
 		9E6DC9271E2C4B5400CC747F /* Countdown Labs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Countdown Labs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E6DC92A1E2C4B5400CC747F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9E6DC92C1E2C4B5400CC747F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9E6DC92C1E2C4B5400CC747F /* TwitterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterTableViewController.swift; sourceTree = "<group>"; };
 		9E6DC92F1E2C4B5400CC747F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E6DC9321E2C4B5400CC747F /* Countdown_Labs.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Countdown_Labs.xcdatamodel; sourceTree = "<group>"; };
 		9E6DC9341E2C4B5400CC747F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E6DC9371E2C4B5400CC747F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E6DC9391E2C4B5400CC747F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E6DC93F1E2C4F0700CC747F /* TimerHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimerHeader.xib; sourceTree = "<group>"; };
+		9E6DC9451E2C5C0700CC747F /* UIView+FromNib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+FromNib.swift"; sourceTree = "<group>"; };
+		9E6DC9471E2C5D4E00CC747F /* TimerHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerHeader.swift; sourceTree = "<group>"; };
+		9E85C2781E2C7F1A00E04F54 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		9E85C27A1E2C82E500E04F54 /* String+Base64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Base64.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +82,11 @@
 		9E6DC9291E2C4B5400CC747F /* Countdown Labs */ = {
 			isa = PBXGroup;
 			children = (
+				9E6DC9441E2C5BEC00CC747F /* Extensions */,
+				9E6DC9431E2C5BE100CC747F /* Custom Views */,
+				9E6DC9421E2C5BCC00CC747F /* Controllers */,
 				9E6DC92A1E2C4B5400CC747F /* AppDelegate.swift */,
-				9E6DC92C1E2C4B5400CC747F /* ViewController.swift */,
+				9E85C2781E2C7F1A00E04F54 /* NetworkManager.swift */,
 				9E6DC92E1E2C4B5400CC747F /* Main.storyboard */,
 				9E6DC9341E2C4B5400CC747F /* Assets.xcassets */,
 				9E6DC9361E2C4B5400CC747F /* LaunchScreen.storyboard */,
@@ -81,6 +94,32 @@
 				9E6DC9311E2C4B5400CC747F /* Countdown_Labs.xcdatamodeld */,
 			);
 			path = "Countdown Labs";
+			sourceTree = "<group>";
+		};
+		9E6DC9421E2C5BCC00CC747F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9E6DC92C1E2C4B5400CC747F /* TwitterTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9E6DC9431E2C5BE100CC747F /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				9E6DC93F1E2C4F0700CC747F /* TimerHeader.xib */,
+				9E6DC9471E2C5D4E00CC747F /* TimerHeader.swift */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
+		9E6DC9441E2C5BEC00CC747F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9E6DC9451E2C5C0700CC747F /* UIView+FromNib.swift */,
+				9E85C27A1E2C82E500E04F54 /* String+Base64.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		DA24E859113A868E533EBF2C /* Frameworks */ = {
@@ -156,6 +195,7 @@
 			files = (
 				9E6DC9381E2C4B5400CC747F /* LaunchScreen.storyboard in Resources */,
 				9E6DC9351E2C4B5400CC747F /* Assets.xcassets in Resources */,
+				9E6DC9401E2C4F0700CC747F /* TimerHeader.xib in Resources */,
 				9E6DC9301E2C4B5400CC747F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,7 +245,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -215,8 +255,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E6DC92D1E2C4B5400CC747F /* ViewController.swift in Sources */,
+				9E85C2791E2C7F1A00E04F54 /* NetworkManager.swift in Sources */,
+				9E6DC9461E2C5C0700CC747F /* UIView+FromNib.swift in Sources */,
+				9E6DC9481E2C5D4E00CC747F /* TimerHeader.swift in Sources */,
+				9E6DC92D1E2C4B5400CC747F /* TwitterTableViewController.swift in Sources */,
 				9E6DC92B1E2C4B5400CC747F /* AppDelegate.swift in Sources */,
+				9E85C27B1E2C82E500E04F54 /* String+Base64.swift in Sources */,
 				9E6DC9331E2C4B5400CC747F /* Countdown_Labs.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +425,7 @@
 				9E6DC93E1E2C4B5400CC747F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
