@@ -394,6 +394,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 77295D5127928624AAEDE496 /* Pods-Countdown Labs.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7SH6RCE89B;
 				INFOPLIST_FILE = "Countdown Labs/Info.plist";
@@ -408,6 +409,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1AA8CC1FD5FE12EF1B67FACD /* Pods-Countdown Labs.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7SH6RCE89B;
 				INFOPLIST_FILE = "Countdown Labs/Info.plist";
